@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picaflor - Inicio</title>
+    <style>
+        /* Definición de colores basados en la imagen */
+        :root {
+            --color-verde: #167d53;    /* Verde oscuro del polo */
+            --color-rojo: #cc4133;     /* Rojo de la flor del logo */
+            --color-amarillo: #f5b931; /* Amarillo del logo */
+            --color-fondo: #ffffff;    /* Blanco puro de la pared */
+            --color-gris-texto: #333333;/* Texto secundario */
+        }
+
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif; /* Usamos una fuente moderna y limpia */
+            background-color: var(--color-fondo);
+            color: var(--color-verde);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        /* Recreación del Logo en SVG para que sea escalable */
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .logo-text {
+            font-weight: 900;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin: 0;
+        }
+
+        /* Sección de contenido */
+        .content {
+            margin-top: 50px;
+        }
+
+        .subtitle {
+            color: var(--color-rojo);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            color: var(--color-gris-texto);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* Botón de llamada a la acción */
+        .btn-contacto {
+            background-color: var(--color-verde);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contacto:hover {
+            background-color: #0c4a30; /* Un tono más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="var(--color-amarillo)"/>
+                <path d="M50 30 Q 60 20, 70 30 T 70 50 Q 60 60, 50 50 Z" fill="var(--color-verde)"/>
+                <path d="M50 50 L 40 60 L 50 70 Z" fill="var(--color-rojo)"/>
+                <line x1="70" y1="30" x2="80" y2="25" stroke="var(--color-verde)" stroke-width="2"/>
+                <circle cx="68" cy="30" r="2" fill="white"/>
+            </svg>
+        </div>
+        
+        <h1 class="logo-text">PICAFLOR</h1>
+
+        <div class="content">
+            <p class="subtitle">Dedicados a tu éxito</p>
+            <p class="description">
+                Aquí puedes poner una descripción de tu negocio. Por ejemplo: "Somos especialistas en [nombre de tu industria o servicio]. Con años de experiencia en el sector, Picaflor ofrece soluciones personalizadas para ayudarte a alcanzar tus objetivos de la forma más eficiente."
+            </p>
+            <a href="#contacto" class="btn-contacto">Contactar con nosotros</a>
+        </div>
+    </div>
+
+</body>
+</html>
